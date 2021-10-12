@@ -1,0 +1,16 @@
+[
+{
+  "modid": "nha",
+  "name": "NoobHack",
+  "description": "An anarchy utility client for 1.12.2.",
+  "version": "${0.0.1}",
+  "mcversion": "${1.12.2}",
+  "url": "https://discord.gg/AHQxzyNAys",
+  "updateUrl": "",
+  "authorList": ["Awsomemanpop1"],
+  "credits": "Some guys",
+  "logoFile": "NOOB%21.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
