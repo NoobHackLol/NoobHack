@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.awsomemanpop1.noobhack.Main;
+//import me.awsomemanpop1.noobhack.module.modules.client.ClickGUI;
+//import me.awsomemanpop1.noobhack.module.modules.combat.AutoClicker;
 import me.awsomemanpop1.noobhack.module.modules.combat.KillAura;
 import me.awsomemanpop1.noobhack.module.modules.player.Lmao;
 import me.awsomemanpop1.noobhack.module.modules.player.Sprint;
+import me.awsomemanpop1.noobhack.module.modules.render.FullBright;
 
 public class ModuleManager {
 
@@ -19,6 +22,10 @@ public class ModuleManager {
 		this.modules.add(new Lmao());
 		//combat
 		this.modules.add(new KillAura());
+	//	this.modules.add(new ClickGUI());
+	//	this.modules.add(new AutoClicker());
+		//render
+		this.modules.add(new FullBright());
 	}
 	
 	public void onUpdate() {

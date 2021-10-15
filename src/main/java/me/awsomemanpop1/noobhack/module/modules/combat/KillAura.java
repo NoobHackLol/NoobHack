@@ -12,17 +12,17 @@ public class KillAura extends Module {
 	public KillAura() {
 		super("KillAura", "kills stuff", Category.COMBAT);
 		this.setKey(Keyboard.KEY_K);
-		toggled = true;
+		toggled = false;
 	}
 	@Override
 	public void onEnable() {
 		if (Minecraft.getMinecraft().player != null)
-			Minecraft.getMinecraft().player.sendChatMessage("holy crap, im trying to kill aura");
+			Minecraft.getMinecraft().player.sendChatMessage("Im trying to kill aura!");
 	
 }
 	@Override
 	public void onDisable() {
 		if (Minecraft.getMinecraft().player != null)
-			Minecraft.getMinecraft().player.sendChatMessage("holy crap, I'm stupid");
+			Minecraft.getMinecraft().player.sendChatMessage("I'm stupid!");
 	}
 }

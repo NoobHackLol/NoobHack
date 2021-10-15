@@ -8,6 +8,7 @@ public class Module {
 	private int key;
 	private Category category;
 	public boolean toggled;
+	public boolean visible = true;
 	
 	
 	public Module(String name, String description, Category category) {
@@ -38,6 +39,16 @@ public class Module {
 	
 	public boolean isToggled() {
 		return toggled;
+	}
+	
+	protected void enable() {
+		onEnable();
+		setToggled(true);
+	}
+	
+	protected void disable() {
+		onDisable();
+		setToggled(false);
 	}
 	
 	public void setToggled(boolean toggled) {

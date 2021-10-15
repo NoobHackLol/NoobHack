@@ -14,6 +14,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import me.awsomemanpop1.noobhack.module.Module;
+import me.awsomemanpop1.noobhack.module.modules.combat.KillAura;
 
 public class Hud extends Gui {
 	
@@ -33,7 +34,7 @@ public class Hud extends Gui {
 		}
 	}
 	
-	private final ResourceLocation watermark = new ResourceLocation("textures/NoobHack.png");
+	private final ResourceLocation watermark = new ResourceLocation("NoobHack.png");
 	
 	@SubscribeEvent
 	public void renderOverlay(RenderGameOverlayEvent event) {
